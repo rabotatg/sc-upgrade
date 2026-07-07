@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SC-UPGRADE</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Supabase JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Верхняя панель -->
+  <header>
+    <div class="logo">⚡ SC-UPGRADE</div>
+    <div class="user-area">
+      <div id="balanceDisplay" class="balance-box">Баланс: 0</div>
+      <button id="depositBtn" class="deposit-btn">💰 Пополнить</button>
+      <div id="authArea">
+        <button id="loginBtn" class="login-btn">🔷 Войти через Discord</button>
+        <div id="userInfo" style="display:none;">
+          <span id="username"></span>
+          <button id="logoutBtn" class="logout-btn">🚪 Выйти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основной контент: рулетка -->
+  <main>
+    <div class="roulette-container">
+      <div class="roulette-wheel" id="wheel"></div>
+      <div class="controls">
+        <button id="spinBtn">🎰 Крутить</button>
+        <input type="number" id="betAmount" value="50" min="1" step="1" />
+        <span>ставка</span>
+      </div>
+      <div id="resultMessage">👋 Войдите, чтобы начать игру</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

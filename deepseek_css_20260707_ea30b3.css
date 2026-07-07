@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0b0e14;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #141a24;
+  border-bottom: 2px solid #2a3344;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(45deg, #f0a500, #ff6b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.balance-box {
+  background: #1f2836;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid #3a4a5e;
+  font-weight: 600;
+  color: #b9d0f0;
+  min-width: 130px;
+  text-align: center;
+}
+
+.deposit-btn, .login-btn, .logout-btn {
+  background: #2a8bff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.deposit-btn:hover, .login-btn:hover {
+  background: #3f9eff;
+  transform: scale(1.02);
+}
+
+.logout-btn {
+  background: #c0392b;
+}
+.logout-btn:hover {
+  background: #e74c3c;
+}
+
+#userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.roulette-container {
+  background: #141a24;
+  padding: 40px 30px;
+  border-radius: 40px;
+  border: 1px solid #2a3344;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  text-align: center;
+  max-width: 750px;
+  width: 100%;
+}
+
+.roulette-wheel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 0;
+  min-height: 160px;
+  border-bottom: 2px dashed #2a3344;
+  margin-bottom: 30px;
+}
+
+.item-skin {
+  background: #1f2836;
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1px solid #3a4a5e;
+  font-weight: 500;
+  font-size: 14px;
+  color: #c8d8f0;
+  transition: 0.2s;
+  box-shadow: 0 4px 0 #0b0e14;
+}
+
+.item-skin.winner {
+  border: 3px solid #f0c000;
+  box-shadow: 0 0 20px #f0c00088;
+  transform: scale(1.05);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#spinBtn {
+  background: #f0a500;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  color: #0b0e14;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 6px 0 #b87a00;
+}
+
+#spinBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #b87a00;
+}
+#spinBtn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #b87a00;
+}
+
+#betAmount {
+  background: #1f2836;
+  border: 1px solid #3a4a5e;
+  padding: 10px 16px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+#resultMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  min-height: 40px;
+  color: #b9d0f0;
+}
